@@ -28,6 +28,7 @@ namespace ProductApps
         }
 
         const double DELIVERYCHARGE = 25;
+        const double WARPING = 5;
 
 
         private void calculateButton_Click(object sender, RoutedEventArgs e)
@@ -46,8 +47,12 @@ namespace ProductApps
             }
 
             double deliveryCharge = 0;
+            double warpingCharge = 0;
             deliveryCharge = totalCharge + DELIVERYCHARGE;
             totalChargeTextBox.Text = deliveryCharge.ToString("C");
+            warpingCharge = totalCharge + DELIVERYCHARGE + WARPING;
+            wrapingTextBox_Copy.Text = warpingCharge.ToString("C");
+
         }
 
 

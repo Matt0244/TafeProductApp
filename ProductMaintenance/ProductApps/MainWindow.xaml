@@ -16,6 +16,8 @@
         <Button Name="closeButton" Content="Cl_ose" HorizontalAlignment="Left" Height="34" Margin="327,264,0,0" VerticalAlignment="Top" Width="122" Click="closeButton_Click"/>
         <Label Content="Total Charge after adding &#xA;the delivery charge ($25)" HorizontalAlignment="Left" Margin="46,195,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.316,0.528" Width="140" Height="34"/>
         <TextBox Name="totalChargeTextBox" HorizontalAlignment="Left" Height="23" Margin="208,206,0,0" TextWrapping="Wrap" Text="totalChargeTextBox" VerticalAlignment="Top" Width="95" RenderTransformOrigin="-0.904,0.017"/>
+        <Label Content="Add warping $5"   HorizontalAlignment="Left" Margin="58,243,0,0" VerticalAlignment="Top" Width="128"/>
+        <TextBox x:Name="wrapingTextBox_Copy" HorizontalAlignment="Left" Height="23" Margin="208,243,0,0" TextWrapping="Wrap" Text="totalChargeTextBox" VerticalAlignment="Top" Width="95" RenderTransformOrigin="-0.904,0.017"/>
 
 
     </Grid>

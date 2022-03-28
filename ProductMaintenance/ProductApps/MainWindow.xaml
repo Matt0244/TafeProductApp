@@ -18,6 +18,8 @@
         <TextBox Name="totalChargeTextBox" HorizontalAlignment="Left" Height="23" Margin="208,206,0,0" TextWrapping="Wrap" Text="totalChargeTextBox" VerticalAlignment="Top" Width="95" RenderTransformOrigin="-0.904,0.017"/>
         <Label Content="Add warping $5"   HorizontalAlignment="Left" Margin="58,243,0,0" VerticalAlignment="Top" Width="128"/>
         <TextBox x:Name="wrapingTextBox_Copy" HorizontalAlignment="Left" Height="23" Margin="208,243,0,0" TextWrapping="Wrap" Text="totalChargeTextBox" VerticalAlignment="Top" Width="95" RenderTransformOrigin="-0.904,0.017"/>
+        <Label Content="GST10%"   HorizontalAlignment="Left" Margin="48,280,0,0" VerticalAlignment="Top" Width="128" RenderTransformOrigin="0.315,1.889"/>
+        <TextBox x:Name="gstTestBox" HorizontalAlignment="Left" Height="23" Margin="208,283,0,0" TextWrapping="Wrap" Text="totalChargeTextBox" VerticalAlignment="Top" Width="95" RenderTransformOrigin="-0.904,0.017"/>
 
 
     </Grid>

@@ -29,7 +29,7 @@ namespace ProductApps
 
         const double DELIVERYCHARGE = 25;
         const double WARPING = 5;
-
+        const double GST = 1.1;
 
         private void calculateButton_Click(object sender, RoutedEventArgs e)
         {
@@ -48,10 +48,13 @@ namespace ProductApps
 
             double deliveryCharge = 0;
             double warpingCharge = 0;
+            double gstCharge = 0;
             deliveryCharge = totalCharge + DELIVERYCHARGE;
             totalChargeTextBox.Text = deliveryCharge.ToString("C");
             warpingCharge = totalCharge + DELIVERYCHARGE + WARPING;
             wrapingTextBox_Copy.Text = warpingCharge.ToString("C");
+            gstCharge = (totalCharge + DELIVERYCHARGE + WARPING) * GST;
+            gstTestBox.Text= gstCharge.ToString("C");
 
         }
 

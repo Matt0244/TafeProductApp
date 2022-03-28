@@ -27,19 +27,29 @@ namespace ProductApps
             InitializeComponent();
         }
 
+        const double DELIVERYCHARGE = 25;
+
+
         private void calculateButton_Click(object sender, RoutedEventArgs e)
         {
+            int totalCharge = 0;
             try
             {
                 cProduct = new Product(Convert.ToDecimal(priceTextBox.Text), Convert.ToInt16(quantityTextBox.Text));
                 cProduct.calTotalPayment();
                 totalPaymentTextBlock.Text = Convert.ToString(cProduct.TotalPayment);
+                totalCharge = int.Parse(totalPaymentTextBlock.Text);
             }
             catch (FormatException)
             {
                 MessageBox.Show("Enter data again", "Data Entry Error");
             }
+
+            double deliveryCharge = 0;
+            deliveryCharge = totalCharge + DELIVERYCHARGE;
+            totalChargeTextBox.Text = deliveryCharge.ToString("C");
         }
+
 
         private void clearButton_Click(object sender, RoutedEventArgs e)
         {
